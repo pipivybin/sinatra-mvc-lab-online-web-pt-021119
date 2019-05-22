@@ -1,7 +1,7 @@
 class PigLatinizer
 
   def consonant?(text)
-    !char.match(/[aAeEiIoOuU]/)
+    !text.match(/[aAeEiIoOuU]/)
   end
 
   end
