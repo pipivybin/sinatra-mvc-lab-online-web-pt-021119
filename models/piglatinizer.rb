@@ -6,10 +6,11 @@ class PigLatinizer
 
   def piglatinize
     arr = @text.split(" ")
+    arr.collect do
     first_letter = arr.first
     arr_new = arr.shift << first_letter
     arr_new.join
-    binding.pry
+  end
   end
 
 end
