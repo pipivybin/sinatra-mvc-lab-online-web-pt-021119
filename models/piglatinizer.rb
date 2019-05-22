@@ -13,7 +13,7 @@ class PigLatinizer
     arr_new = word_arr.shift << first_letter
     output << arr_new.join
     end
-    output.join("")
+    output.join(" ")
   end
 
 end
