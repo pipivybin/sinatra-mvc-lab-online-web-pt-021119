@@ -14,7 +14,7 @@ class PigLatinizer
     third_letter = word_arr[2]
     if !consonant?(first_letter)
       phrase = word_arr.join("") + "way"
-    elsif consonant?(second_letter) && consonant?(third_letter)
+    elsif consonant?(second_letter) && !consonant?(third_letter)
       word_arr.shift
       word_arr.shift
       phrase = word_arr.join("") + first_letter + second_letter + "ay"
