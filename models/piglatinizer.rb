@@ -12,7 +12,7 @@ class PigLatinizer
       word_arr = word.split("")
     first_letter = word_arr[0]
     second_letter = word_arr[1]
-    if  ["a", "e", "i", "o", "u")
+    if  ["a", "e", "i", "o", "u"].include?(first_letter)
       phrase = word_arr.join("") + "way"
     elsif second_letter != a || e || i || o || u
       binding.pry
