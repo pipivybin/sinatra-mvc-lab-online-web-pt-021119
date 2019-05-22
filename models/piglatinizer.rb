@@ -18,7 +18,7 @@ class PigLatinizer
     end
     output << phrase
   end
-  output.join(", ")
+  output.join(" ")
   end
 
 end
