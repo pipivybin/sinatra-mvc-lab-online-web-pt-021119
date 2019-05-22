@@ -15,10 +15,10 @@ class PigLatinizer
     if  ["a", "e", "i", "o", "u"].include?(first_letter)
       phrase = word_arr.join("") + "way"
     elsif second_letter != "a" || second_letter != "e" || second_letter != "i" || second_letter != "o" || second_letter != "u"
-      # binding.pry
+
       phrase = word_arr.shift.shift.join("") + first_letter + second_letter + "ay"
     else phrase = word_arr.shift.join("") + first_letter + "ay"
-
+      binding.pry
     end
   end
 
