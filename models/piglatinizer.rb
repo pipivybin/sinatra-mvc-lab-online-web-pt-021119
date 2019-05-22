@@ -11,7 +11,9 @@ class PigLatinizer
       output = []
       word_arr = word.split("")
     first_letter = word_arr.first
-    arr_new = word_arr.shift << first_letter
+    no_first_letter = word_arr.shift
+    no_first_letter << first_letter
+     
     binding.pry
     output << arr_new.join
     end
