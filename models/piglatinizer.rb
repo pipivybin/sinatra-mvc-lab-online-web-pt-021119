@@ -10,7 +10,7 @@ class PigLatinizer
     third_letter = word_arr[2]
     if  ["a", "e", "i", "o", "u"].include?(first_letter)
       phrase = word_arr.join("") + "way"
-    elsif second_letter != "a" && second_letter != "e" && second_letter != "i" && second_letter != "o" && second_letter != "u" && (third_letter = "a" || third_letter = "e" || third_letter = "i" || third_letter = "o" || third_letter = "u")
+    elsif second_letter || third_letter != "a" && second_letter != "e" && second_letter != "i" && second_letter != "o" && second_letter != "u" && (third_letter = "a" || third_letter = "e" || third_letter = "i" || third_letter = "o" || third_letter = "u")
       word_arr.shift
       word_arr.shift
       phrase = word_arr.join("") + first_letter + second_letter + "ay"
