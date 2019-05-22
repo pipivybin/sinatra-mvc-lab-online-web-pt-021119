@@ -14,7 +14,8 @@ class PigLatinizer
     second_letter = word_arr[1]
     if first_letter == a || e || i || o || u
       phrase = word_arr.join("way")
-    when
+    elsif second_letter != a || e || i || o || u
+      phrase
     word_arr.shift
     word_arr << first_letter
 
