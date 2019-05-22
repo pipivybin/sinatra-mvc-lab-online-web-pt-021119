@@ -4,7 +4,6 @@ class PigLatinizer
     !letter.match(/[aAeEiIoOuU]/)
   end
 
-  end
 
   def piglatinize(text)
     arr = text.split(" ")
