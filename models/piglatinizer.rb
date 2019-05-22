@@ -19,6 +19,7 @@ class PigLatinizer
     end
     output << phrase
   end
+  binding.pry
   output.join(", ")
   end
 
