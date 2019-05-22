@@ -16,7 +16,7 @@ class PigLatinizer
     third_letter = word_arr[2]
     if !consonant?(first_letter)
       phrase = word_arr.join("") + "way"
-    elsif (second_letter || third_letter) != "a" && (second_letter || third_letter) != "e" && (second_letter || third_letter) != "i" && (second_letter || third_letter) != "o" && (second_letter || third_letter) != "u"
+    elsif !consonant(second_letter) && consonant(third_letter)
       word_arr.shift
       word_arr.shift
       word_arr.shift
