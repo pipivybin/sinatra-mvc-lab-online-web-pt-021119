@@ -7,8 +7,8 @@ class PigLatinizer
   def piglatinize
     arr = @text.split("")
     first_letter = arr.first
-    arr.shift << first_letter
-
+    arr_new = arr.shift << first_letter
+    arr_new.join
   end
 
 end
