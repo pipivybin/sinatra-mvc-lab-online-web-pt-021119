@@ -6,6 +6,7 @@ class PigLatinizer
 
   def piglatinize
     first_letter = @text.split("").first
+    
   end
 
 end
