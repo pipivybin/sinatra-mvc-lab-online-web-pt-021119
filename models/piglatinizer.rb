@@ -5,13 +5,14 @@ class PigLatinizer
   end
 
   def piglatinize
-    binding.pry
+
     arr = @text.split(" ")
     arr.collect do |word|
       output = []
       word_arr = word.split("")
     first_letter = word_arr.first
     arr_new = word_arr.shift << first_letter
+    binding.pry
     output << arr_new.join
     end
     output.join(" ")
