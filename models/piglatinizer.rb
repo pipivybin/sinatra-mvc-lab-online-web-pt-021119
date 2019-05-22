@@ -11,7 +11,7 @@ class PigLatinizer
     output = []
     arr.collect do |word|
       word_arr = word.split("")
-    first_letter = word_arr[0].downcase
+    first_letter = word_arr[0]
     second_letter = word_arr[1]
     third_letter = word_arr[2]
     if consonant?(first_letter)
