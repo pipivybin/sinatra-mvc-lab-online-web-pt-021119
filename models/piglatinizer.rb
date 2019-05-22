@@ -14,6 +14,7 @@ class PigLatinizer
     case first_letter
     when a || e || i || o || u
       phrase = word_arr.join("way")
+    when 
     word_arr.shift
     word_arr << first_letter
 
