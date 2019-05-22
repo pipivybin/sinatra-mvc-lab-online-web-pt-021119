@@ -5,7 +5,6 @@ class PigLatinizer
   end
 
   def piglatinize
-
     arr = @text.split(" ")
     arr.collect do |word|
       output = []
