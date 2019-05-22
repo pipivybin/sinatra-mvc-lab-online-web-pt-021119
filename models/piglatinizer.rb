@@ -13,7 +13,7 @@ class PigLatinizer
     first_letter = word_arr[0]
     second_letter = word_arr[1]
     case first_letter
-    when
+    when a, e, i, o, u
 
 
 
