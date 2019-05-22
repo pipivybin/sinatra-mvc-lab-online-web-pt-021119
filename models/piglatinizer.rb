@@ -1,10 +1,10 @@
 class PigLatinizer
 
-  def initialize(text)
+  def initialize
     @text = text
   end
 
-  def piglatinize
+  def piglatinize(text)
     arr = @text.split(" ")
     arr.collect do |word|
       output = []
