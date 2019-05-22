@@ -8,7 +8,7 @@ class PigLatinizer
     arr = @text.split(" ")
     arr.collect do |word|
       word_arr = word.split("")
-    first_letter = arr.first
+    first_letter = word_arr.first
     arr_new = arr.shift << first_letter
     arr_new.join
     end
