@@ -5,7 +5,7 @@ class PigLatinizer
   end
 
   def piglatinize
-    
+    @text.split("").first
   end
 
 end
