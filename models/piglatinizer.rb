@@ -7,6 +7,7 @@ class PigLatinizer
       word_arr = word.split("")
     first_letter = word_arr[0].downcase
     second_letter = word_arr[1]
+    third_letter = word_arr[2]
     if  ["a", "e", "i", "o", "u"].include?(first_letter)
       phrase = word_arr.join("") + "way"
     elsif second_letter != "a" && second_letter != "e" && second_letter != "i" && second_letter != "o" && second_letter != "u"
