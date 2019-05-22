@@ -16,7 +16,7 @@ class PigLatinizer
       phrase = word_arr.join("") + first_letter + second_letter + "ay".join(", ")
     else word_arr.shift
       phrase = word_arr.join("") + first_letter + "ay".join(", ")
-
+binding.pry
     end
   end
 
