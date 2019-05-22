@@ -13,7 +13,7 @@ class PigLatinizer
     first_letter = word_arr.first
     case first_letter
     when a || e || i || o || u
-      word_arr.join("way")
+      phrase = word_arr.join("way")
     word_arr.shift
     word_arr << first_letter
 
