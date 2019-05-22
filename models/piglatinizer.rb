@@ -9,6 +9,7 @@ class PigLatinizer
     first_letter = arr.first
     arr_new = arr.shift << first_letter
     arr_new.join
+    binding.pry
   end
 
 end
