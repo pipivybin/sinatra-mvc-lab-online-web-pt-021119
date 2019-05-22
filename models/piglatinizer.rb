@@ -12,6 +12,11 @@ class PigLatinizer
       word_arr = word.split("")
     first_letter = word_arr[0]
     second_letter = word_arr[1]
+    case first_letter
+    when
+
+
+
     if first_letter == (a || e || i || o || u)
       phrase = word_arr.join("") + "way"
     elsif second_letter != (a || e || i || o || u)
