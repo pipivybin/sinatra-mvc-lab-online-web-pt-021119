@@ -13,9 +13,9 @@ class PigLatinizer
     elsif second_letter != "a" && second_letter != "e" && second_letter != "i" && second_letter != "o" && second_letter != "u"
       word_arr.shift
       word_arr.shift
-      phrase = word_arr.join("") + first_letter + second_letter + "ay"
+      phrase = word_arr.join("") + first_letter + second_letter + "ay".join(", ")
     else word_arr.shift
-      phrase = word_arr.join("") + first_letter + "ay"
+      phrase = word_arr.join("") + first_letter + "ay".join(", ")
 
     end
   end
